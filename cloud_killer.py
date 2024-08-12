@@ -66,12 +66,12 @@ print('''
 
 # Get the target domain from the user and create an empty report file
 try:
-    domain = input('[+] Enter Target domain >> ')
+    domain = input('[+] Enter Target domain >>')
     report_name = f'Report_{domain}.txt'
     with open(report_name, 'w') as f:
         pass
 except KeyboardInterrupt:
-    print('\n[-] Cloud Killer is closed !! ')
+    print('\n[-] Cloud Killer is closed !!')
     quit()
 
 # Define the function that checks the domain
@@ -108,4 +108,4 @@ def process_subdomains(domain, report_name):
 
 # Start processing subdomains
 process_subdomains(domain, report_name)
-print('[-] Cloud Killer is closed !! ')
+print('[-] Cloud Killer is closed !!')
